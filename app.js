@@ -17,7 +17,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://cuvetteBlogPage:bUbWFnk4b9dW5QC1@cluster0.xrbstsw.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true}).catch;
+
 const postSchema = {
   title: String,
   PostDescription: String
